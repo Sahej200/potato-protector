@@ -1,24 +1,87 @@
-# 🥔 Potato Protector (Potato Leaf Disease Detection)
+# 🥔 Potato Protector
 
-A Streamlit app that loads a Keras/TensorFlow model (`potatoes.h5`) to classify potato leaf images.
+**Potato Protector** is a deep learning–powered web app that detects **potato leaf diseases** from images.  
+Built with **Streamlit** and **TensorFlow/Keras**, it helps farmers and researchers quickly identify plant health issues.
 
-## Local Run
-```bash
+---
+
+## 🚀 Features
+- 📸 Upload potato leaf images and get instant predictions  
+- 🤖 Pre-trained TensorFlow model (`potatoes.h5`)  
+- 📊 Confidence score + probability breakdown  
+- 🌐 Easy deployment on **Streamlit Community Cloud**  
+
+---
+
+## 🖼️ Screenshots
+
+### 🔹 Home Page
+![Home Page](pp1.png)
+
+### 🔹 Prediction Example
+![Prediction Example](pp2.png)
+
+---
+
+## 📂 Project Structure
+potato-protector/
+│── app.py # Streamlit app
+│── potatoes.h5 # Trained model (2.2 MB)
+│── requirements.txt # Dependencies
+│── runtime.txt # Python version for Streamlit Cloud
+│── README.md # Project documentation
+│── .gitignore # Ignored files
+│── pp1.png # Screenshot - Home page
+│── pp2.png # Screenshot - Prediction example
+
+
+
+---
+
+## ⚙️ Installation & Usage
+
+### 1. Clone the repository
+
+git clone https://github.com/Sahej200/potato-protector.git
+cd potato-protector
+2. Create and activate a virtual environment
+
 python -m venv .venv
-# Windows: .venv\Scripts\activate   |  macOS/Linux: source .venv/bin/activate
+# Windows
+.venv\Scripts\activate
+# Mac/Linux
+source .venv/bin/activate
+3. Install dependencies
+
 pip install -r requirements.txt
+4. Run the app
+
 streamlit run app.py
-```
+☁️ Deployment on Streamlit Cloud
+Push this repo to GitHub.
 
-## Streamlit Community Cloud Deploy
-1. Push this folder to a **public GitHub repo** (keep `app.py`, `potatoes.h5`, `requirements.txt`, `runtime.txt` in the repo root).
-2. Go to https://share.streamlit.io and connect your GitHub.
-3. Select your repo and set **Main file path** to `app.py`.
-4. The app will build with **Python 3.10.13** and install from `requirements.txt`.
+Go to Streamlit Cloud.
 
-> If `potatoes.h5` is larger than 100 MB, use **Git LFS** or host the model on Hugging Face and download on startup.
+Create a new app → connect your repo → set main file path to app.py.
 
-## Hugging Face Spaces (Alternative)
-1. Create a Space (type: **Streamlit**).
-2. Upload the same files (`app.py`, `requirements.txt`, `potatoes.h5`).
-3. Spaces will auto-build and serve the app.
+Done! 🚀
+
+🧠 Model Info
+Dataset: PlantVillage Potato Dataset
+
+Classes:
+
+Early Blight
+
+Late Blight
+
+Healthy
+
+Frameworks: TensorFlow / Keras
+
+📜 License
+This project is open-source and available under the MIT License.
+
+👨‍💻 Author: Sahej Prakash
+📧 Contact: [prakash.sahej@gmail.com]
+
