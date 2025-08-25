@@ -10,7 +10,7 @@ try:
 except Exception as e:
     tf = None
 
-st.set_page_config(page_title="Crop Protector – Potato Leaf Disease", page_icon="🥔")
+st.set_page_config(page_title="Potato Protector – Potato Leaf Disease", page_icon="🥔")
 
 st.title("🥔 Crop Protector")
 st.caption("Predict potato leaf disease using a pre-trained Keras/TensorFlow model.")
