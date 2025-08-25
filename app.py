@@ -12,7 +12,7 @@ except Exception as e:
 
 st.set_page_config(page_title="Potato Protector – Potato Leaf Disease", page_icon="🥔")
 
-st.title("🥔 Crop Protector")
+st.title("🥔 Potato Protector")
 st.caption("Predict potato leaf disease using a pre-trained Keras/TensorFlow model.")
 
 # Resolve model path relative to this file
